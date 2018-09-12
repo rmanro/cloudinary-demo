@@ -9,8 +9,7 @@ class App extends Component {
     return (
       <div className="App">
           <h1>CLOUDINARY DEMO</h1>
-          <img src={src} alt="Bigger Hippo Dog"/>
-          <img src={getUrl(src, 'w_100')} alt="Smaller Hippo Dog"/>
+          <img src={src} alt="Normal Hippo Dog"/>
       </div>
     );
   }
@@ -18,5 +17,7 @@ class App extends Component {
 
 export default App;
 
-// another image sizing example:
+// image sizing and effects examples:
+// <img src={getUrl(src, 'w_100')} alt="Smaller Hippo Dog"/>
 // <img src={getUrl(src, 'w_50,h_50')} alt="Even Smaller Hippo Dog"/>
+// <img src={getUrl(src, 'e_oil_paint:70')} alt="Oil Paint Hippo Dog"/>
